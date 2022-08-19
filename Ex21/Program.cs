@@ -12,9 +12,9 @@ int x2 = Coordinate("x", "B");
 int y2 = Coordinate("y", "B");
 int z2 = Coordinate("z", "B");
 
-int Coordinate(string coorName, string pointName)
+int Coordinate(string сName, string pName)
 {
-    Console.Write($"Введите координату {coorName} точки {pointName}: ");
+    Console.Write($"Введите координату {сName} точки {pName}: ");
     return Convert.ToInt16(Console.ReadLine());
 }
 
@@ -28,4 +28,4 @@ double Decision(double x1, double x2,
 
 double segmentLength =  Math.Round (Decision(x1, x2, y1, y2, z1, z2), 2 );
 
-Console.WriteLine($"Длина отрезка  {segmentLength}");
+Console.WriteLine($"Длина отрезка = {segmentLength}");
