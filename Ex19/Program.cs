@@ -7,16 +7,16 @@
 // 23432 -> да
 
 Console.Write("Введите число: ");
-string? number = Console.ReadLine();
+string? num1 = Console.ReadLine();
 
-void CheckingNumber(string number){
-  if (number[0]==number[4] || number[1]==number[3]){
-    Console.WriteLine($"Число: {number} - является палиндромом.");
+void CheckingNumber(string num1){
+  if (num1[0]==num1[4] || num1[1]==num1[3]){
+    Console.WriteLine($"Число: {num1} - является палиндромом.");
   }
-  else Console.WriteLine($"Число: {number} - не является палиндромом.");
+  else Console.WriteLine($"Число: {num1} - не является палиндромом.");
 }
 
-if (number!.Length == 5){
-  CheckingNumber(number);
+if (num1!.Length == 5){
+  CheckingNumber(num1);
 }
 else Console.WriteLine($"Введите пятизначное число!");
