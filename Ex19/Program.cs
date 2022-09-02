@@ -15,4 +15,4 @@ void checkNum (string number)
     else Console.WriteLine("Введенное число - не палиндром");
 }
 if (number.Length == 5) checkNum(number);
-else Console.Write ("Введённое число не пятизначное");
+else Console.Write ("Используйте только пятизначные числа!");
